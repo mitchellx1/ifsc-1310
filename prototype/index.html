@@ -1,1 +1,150 @@
 <!--First Assignment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Provides a brief description of the webpage for search engines -->
+    <meta name="description" content="Sample HTML5 document with XHTML syntax." />
+    <!-- Specifies the author of the document -->
+    <meta name="author" content="Mitchell Person" />
+    <!-- Sets the title of the webpage displayed in the browser tab -->
+    <title>Sample XHTML-Style HTML5 Document</title>
+</head>
+<body>
+    <div id="main"> <!-- Main container -->
+
+        <div id="header"> <!-- Header section -->
+            <header>
+                <h1>Welcome to Mitchell's Webpage</h1>
+            </header>
+        </div> <!-- Closing header div -->
+
+        <div id="content"> <!-- Content section -->
+            <section>
+                <h2>Introducing Me</h2>
+                <p>For this assignment I've decided to make an about me page while adhering to the requirements in full. Let's dive in!</p>
+
+                <h3>What You'll See</h3>
+                <p>This page includes information about me while also demonstrating some HTML5 standard elements.</p>
+
+                <h4>About Me</h4>
+                <p>Here are a couple small details about me at a glance!</p>
+
+                <h5>Favorite Colors</h5>
+                <ol>
+                    <li>Blue</li>
+                    <li>Grey</li>
+                    <li>Black</li>
+                </ol>
+
+                <h5>Hobbies</h5>
+                <ul>
+                    <li>Music</li>
+                    <li>Gaming</li>
+                    <li>Gym</li>
+                </ul>
+
+                <h5>Background Information</h5>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>I am originally from Miami Florida. I moved to Arkansas when I was 11 years old. </dd>
+                    <dt>Major(s)</dt>
+                    <dd>I first began my career at UCA in 2018 as a music major. I then pivoted to criminology with dream of becoming a detctive. 
+                        I took a break from school but now I'm back at UALR as a cybersecurity major! </dd>
+                    <dt>Workforce</dt>
+                    <dd>While I was away from college I ended up working at Raising Cane's as a crewmember.
+                        I worked my way up quickly and became a Lead Restaurant Manager. 
+                        That job lasted until 2024 when I decided it was time to return to school. 
+                    </dd>
+                </dl>
+
+                <h4>Quotes</h4>
+                <p>Walt Whitman: <q>Be curious, not judgemental.</q> (Inline)</p>
+                <blockquote>
+                    <p>Henry Ford once said, "Failure is the opportunity to begin again more inteligently." (Block)</p>
+                </blockquote>
+
+                <h4>The Useless Table</h4>
+                <table>
+                    <caption>Useless Assortment of Things</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Numbers</th>
+                            <th scope="col">Letters</th>
+                            <th scope="col">Colors</th>
+                            <th scope="col">Shapes</th>
+                            <th scope="col">Animals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A</td>
+                            <td>Red</td>
+                            <td>Circle</td>
+                            <td>Dog</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>B</td>
+                            <td>Orange</td>
+                            <td>Square</td>
+                            <td>Cat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>C</td>
+                            <td>Yellow</td>
+                            <td>Triangle</td>
+                            <td>Moose</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>D</td>
+                            <td>Green</td>
+                            <td>Rectangle</td>
+                            <td>Ostrich</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>E</td>
+                            <td>Blue</td>
+                            <td>Trapezoid</td>
+                            <td>Capybara</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Image Example</h4>
+                <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UALR Logo" />
+            </section>
+        </div> <!-- Closing content div -->
+
+        <div id="nav"> <!-- Navigation section -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home Page">Home</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/University_of_Arkansas_at_Little_Rock" title="About UALR">About</a></li>
+                    <li><a href="https://ualr.edu" target="_blank" title="University of Arkansas at Little Rock">UALR</a></li>
+                    <li><a href="mailto:mbperson@ualr.edu" title="Contact Us">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- Closing nav div -->
+
+        <div id="footer"> <!-- Footer section -->
+            <footer>
+                <h6>&copy; 2025 Mitchell Person | <a href="mailto:mbperson@ualr.edu">Email Me</a></h6>
+                <button onclick="scrollToTop()">Back to Top</button>
+            </footer>
+        </div> <!-- Closing footer div -->
+
+    </div> <!-- Closing main div -->
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
