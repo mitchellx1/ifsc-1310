@@ -1,0 +1,194 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  /* Global Header Background (Mars Surface) */
+  .header-bg {
+    background: url('../../img/mars-surface.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .header-bg.home {
+    background: url('../../img/mars-surface.jpg') center/cover no-repeat;
+    padding: 7rem 1rem;
+  }
+  
+  h1, h2, h3 {
+    color: #ff6f40;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Navigation */
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem 1rem 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+  }
+  
+  /* Layout Sections */
+  section {
+    margin: 2rem 1rem;
+  }
+  
+  /* Links */
+  a {
+    color: #ffccb5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Tagline */
+  .tagline {
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  /* Home Page Feature Images */
+  .feature-img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  /* Highlight Grid */
+  .highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Timeline Styling */
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding-left: 20px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #444;
+  }
+  
+  .timeline-entry {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 40px;
+  }
+  
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #ff6f40;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .timeline-entry .content {
+    background: #2b2b2b;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .timeline-entry img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  .timeline-entry.left .content {
+    margin-left: 60px;
+  }
+  
+  .timeline-entry.right .content {
+    margin-left: 60px;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-entry {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .timeline-entry.left .content {
+      margin-left: 60px;
+      margin-right: auto;
+    }
+  
+    .timeline-entry.right .content {
+      margin-left: auto;
+      margin-right: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 10px;
+    }
+  
+    .timeline-entry {
+      padding-left: 30px;
+    }
+  
+    .timeline-entry::before {
+      left: 2px;
+    }
+  
+    .timeline-entry .content {
+      margin-left: 40px !important;
+      margin-right: 0 !important;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 3rem;
+    border-top: 1px solid #333;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+    text-align: center;
+  }
+  
